@@ -19,7 +19,7 @@ These additional references should also help you:
 ### Kas gali būti svarbu
 
 - Apsirašome klasę implementuojančią interfeisą __CommandLineRunner__, t.y. realizuojančią metodą __void run(String... args)__,
-kuris ir bus paleistas kaip Spring pilnai startuos, t.y. bus sukurtas application context'as.
+kuris ir bus paleistas kai Spring pilnai startuos, t.y. bus sukurtas application context'as.
 
 - Atkreipkite dėmesį į __application.properties__  parametro __spring.datasource.url__ reikšmę. Prie jos pridėtas
 naujas parametras __useSSL=false__. Jis ženkliai sumažina klaidų/įspėjimų skaičių konsolėje kai aplikacija užsidarinėja
