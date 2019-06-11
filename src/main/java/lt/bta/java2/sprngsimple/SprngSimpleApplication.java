@@ -17,7 +17,6 @@ public class SprngSimpleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SprngSimpleApplication.class, args);
 	}
-
 }
 
 interface ProductRepository extends PagingAndSortingRepository<Product, Integer> {
@@ -32,7 +31,7 @@ class MyAppRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		productRepository.findAll().forEach(System.out::println);
+		productRepository.findAll().forEach(x -> System.out.println(x.getName()));
 	}
 }
 
